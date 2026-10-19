@@ -1,0 +1,79 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# Personal files and local credentials
+/简历.html
+**/application-local.yml
+**/.env.local
+**/.env.*.local
+
+# Generated test artifacts
+**/test-results/
+**/playwright-report/
+**/coverage/
+*.tsbuildinfo
+
+# Historical database dumps (local only)
+/数据库/platform_smart_park.sql
+/数据库/user.sql
+
+# Audit snapshots and generated execution evidence
+/docs/**/*.json
+/docs/**/*.txt
+
+/.git-history-backup/
+
+# Publication exclusions: local environment, private keys, editor state and logs
+**/.vscode/
+**/node_modules/
+**/dist/
+**/dist-ssr/
+**/logs/
+*.log
+**/.env
+**/.env.*
+!**/.env.example
+!**/.env.development
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.class
+.DS_Store
+Thumbs.db
+/docs/系统重新设计/00-现状调研/00-审计基线与环境清单.md

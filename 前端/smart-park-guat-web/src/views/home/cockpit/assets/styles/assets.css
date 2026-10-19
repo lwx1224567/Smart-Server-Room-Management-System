@@ -1,0 +1,927 @@
+.asset-topology .twin-layout {
+  display: grid;
+  grid-template-columns: 24% minmax(0, 1fr) 24%;
+  gap: 10px;
+  flex: 1;
+  min-height: 0;
+}
+.asset-topology .twin-side {
+  display: grid;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+  min-height: 0;
+}
+.asset-topology .twin-side > .panel {
+  min-height: 0;
+  overflow: hidden;
+}
+.asset-topology .twin-body {
+  padding: 10px 12px;
+  font-size: 11px;
+  overflow: auto;
+  max-height: calc(100% - 38px);
+}
+.asset-topology .twin-center {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) 76px;
+  gap: 9px;
+  min-width: 0;
+  min-height: 0;
+}
+.asset-topology .twin-center > .nav {
+  margin-top: 0;
+  width: 76%;
+  height: 70px;
+  align-self: center;
+}
+.asset-topology .twin-visual {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.asset-topology .twin-toolbar {
+  height: 44px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #194a67;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+.asset-topology .twin-toolbar strong {
+  white-space: nowrap;
+}
+.asset-topology .twin-visual-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 9px 12px;
+  color: #76aabd;
+  font-size: 9px;
+  border-top: 1px solid #17435c;
+}
+.asset-topology .asset-total {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 5px 0 10px;
+}
+.asset-topology .asset-total strong {
+  font-size: 38px;
+  color: #48ddff;
+  text-shadow: 0 0 18px #126486;
+}
+.asset-topology .asset-total span {
+  color: #8db6c8;
+  font-size: 10px;
+}
+.asset-topology .twin-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+.asset-topology .twin-metrics.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.asset-topology .twin-metrics > div {
+  border: 1px solid #164b67;
+  background: #082b43;
+  padding: 8px;
+  color: #82b4c8;
+  font-size: 10px;
+  min-width: 0;
+}
+.asset-topology .twin-metrics b {
+  display: block;
+  font-size: 17px;
+  color: #5bdeff;
+  margin-top: 3px;
+  white-space: nowrap;
+}
+.asset-topology .twin-metrics.three b {
+  font-size: 12px;
+}
+.asset-topology .asset-type-chart {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.asset-topology .asset-pie {
+  width: 105px;
+  height: 105px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: conic-gradient(
+    #35d3fa 0 44%,
+    #4a91ff 44% 59%,
+    #8a7aff 59% 70%,
+    #3de1a5 70% 77%,
+    #ffb95d 77% 100%
+  );
+  position: relative;
+}
+.asset-topology .asset-pie:after {
+  content: attr(data-total);
+  position: absolute;
+  inset: 24px;
+  background: #08253a;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #dff7ff;
+  font-size: 12px;
+}
+.asset-topology .asset-legend {
+  line-height: 2.1;
+  font-size: 10px;
+}
+.asset-topology .asset-legend i {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 6px;
+}
+.asset-topology .tiny-note {
+  font-size: 9px;
+  color: #739fb3;
+  margin-top: 9px;
+  line-height: 1.6;
+}
+.asset-topology .status-row {
+  display: grid;
+  grid-template-columns: 1fr 40px;
+  gap: 5px;
+  padding: 5px 0;
+}
+.asset-topology .status-row b {
+  text-align: right;
+}
+.asset-topology .status-track {
+  grid-column: 1/-1;
+  height: 7px;
+  background: #0c3045;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.asset-topology .status-track i {
+  display: block;
+  height: 100%;
+}
+.asset-topology .asset-location {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 7px;
+  border-bottom: 1px dashed #22516b;
+  cursor: pointer;
+}
+.asset-topology .asset-location:hover {
+  background: #0e4159;
+}
+.asset-topology .detail-title {
+  font-size: 15px;
+  color: #5fe0ff;
+  font-weight: 700;
+  margin-bottom: 9px;
+}
+.asset-topology .detail-kv {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px dashed #17445e;
+}
+.asset-topology .detail-kv span {
+  color: #80a8bb;
+}
+.asset-topology .detail-kv b {
+  font-weight: 500;
+  text-align: right;
+}
+.asset-topology .asset-filter {
+  display: flex;
+  gap: 6px;
+  padding: 9px 12px;
+  flex-wrap: wrap;
+}
+.asset-topology .asset-filter button,
+.asset-topology .topo-toolbar button {
+  border: 1px solid #245e7d;
+  background: #082b40;
+  color: #a5d5e7;
+  padding: 6px 9px;
+  font-size: 10px;
+  cursor: pointer;
+}
+.asset-topology .asset-filter button.active,
+.asset-topology .topo-toolbar button.active {
+  border-color: #48d9ff;
+  color: #57e2ff;
+  background: #10506b;
+}
+.asset-topology .asset-room,
+.asset-topology .topo-room {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 50% 52%, rgba(19, 99, 138, 0.35), transparent 68%);
+}
+.asset-topology .asset-floor {
+  position: absolute;
+  left: 11%;
+  right: 11%;
+  top: 31%;
+  height: 54%;
+  transform: perspective(600px) rotateX(58deg);
+  border: 1px solid #267ba0;
+  background:
+    repeating-linear-gradient(90deg, transparent 0 34px, #0e4059 35px 36px),
+    repeating-linear-gradient(transparent 0 34px, #0e4059 35px 36px);
+}
+.asset-topology .asset-racks {
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  top: 20%;
+  bottom: 15%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 12% 6%;
+}
+.asset-topology .asset-rack {
+  position: relative;
+  border: 1px solid #39a9d0;
+  background: linear-gradient(90deg, #061827, #164861, #071e2e);
+  box-shadow:
+    0 8px 16px #0018,
+    inset 0 0 12px #26b6e122;
+  cursor: pointer;
+  min-width: 0;
+  transition: 0.2s;
+}
+.asset-topology .asset-rack:before {
+  content: '';
+  position: absolute;
+  inset: 11% 17%;
+  background: repeating-linear-gradient(to bottom, #2785a5 0 3px, #061a2a 3px 10px);
+}
+.asset-topology .asset-rack span {
+  position: absolute;
+  bottom: -19px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #8db9c9;
+  font-size: 9px;
+}
+.asset-topology .asset-rack:hover,
+.asset-topology .asset-rack.selected {
+  transform: translateY(-7px);
+  border-color: #67e7ff;
+  box-shadow: 0 0 23px #27b9ef66;
+}
+.asset-topology .asset-rack.dimmed {
+  opacity: 0.22;
+}
+.asset-topology .asset-room-caption,
+.asset-topology .topo-room-info {
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  color: #81b9cf;
+  font-size: 10px;
+  background: #031b2acc;
+  padding: 5px 8px;
+}
+.asset-topology .topo-toolbar {
+  display: flex;
+  gap: 5px;
+}
+.asset-topology .topo-search {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  font-size: 9px;
+  color: #78a6b8;
+}
+.asset-topology .topo-search input {
+  background: #071e30;
+  border: 1px solid #1e6281;
+  color: #dff7ff;
+  padding: 7px 9px;
+  min-width: 150px;
+  width: 38%;
+}
+.asset-topology .topo-canvas {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 45%, #0d3550 0, transparent 65%),
+    linear-gradient(90deg, #16405a24 1px, transparent 1px),
+    linear-gradient(#16405a24 1px, transparent 1px);
+  background-size:
+    auto,
+    28px 28px,
+    28px 28px;
+}
+.asset-topology .topo-canvas svg {
+  width: 100%;
+  height: 100%;
+}
+.asset-topology .topo-node {
+  cursor: pointer;
+}
+.asset-topology .topo-node rect {
+  fill: #0d344c;
+  stroke: #329cc6;
+  stroke-width: 1.5;
+  transition: 0.15s;
+}
+.asset-topology .topo-node.selected rect,
+.asset-topology .topo-node:hover rect {
+  fill: #175674;
+  stroke: #66dfff;
+  stroke-width: 2.5;
+  filter: drop-shadow(0 0 5px #37c8ff);
+}
+.asset-topology .topo-node text {
+  font-size: 12px;
+  fill: #d5f2ff;
+  pointer-events: none;
+}
+.asset-topology .topo-node .node-meta {
+  font-size: 9px;
+  fill: #7bb3c9;
+}
+.asset-topology .topo-edge {
+  cursor: pointer;
+  fill: none;
+  stroke-width: 2.4;
+}
+.asset-topology .topo-edge.normal {
+  stroke: #3bd3ab;
+}
+.asset-topology .topo-edge.error {
+  stroke: #ff746e;
+}
+.asset-topology .topo-edge.unknown {
+  stroke: #8799a7;
+  stroke-dasharray: 7 6;
+}
+.asset-topology .topo-edge.selected {
+  stroke-width: 5;
+  filter: drop-shadow(0 0 4px #62e6ff);
+}
+.asset-topology .topo-layer {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px dashed #1d526c;
+}
+.asset-topology .topo-layer:hover,
+.asset-topology .topo-layer.active {
+  background: #0d4961;
+  color: #52e0ff;
+}
+.asset-topology .topo-layer span {
+  color: #77a7b8;
+}
+.asset-topology .port-title {
+  margin-bottom: 9px;
+  color: #c3edff;
+}
+.asset-topology .port-stacked {
+  display: flex;
+  height: 11px;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.asset-topology .port-stacked i {
+  height: 100%;
+}
+.asset-topology .quality-placeholder {
+  margin-top: 12px;
+  padding: 12px 5px;
+  text-align: center;
+  border: 1px dashed #225b77;
+  color: #588fa8;
+  letter-spacing: 1px;
+}
+.asset-topology .link-sample {
+  display: inline-block;
+  width: 18px;
+  height: 0;
+  border-top: 2px solid #3bd3ab;
+  vertical-align: middle;
+}
+.asset-topology .link-sample.error {
+  border-color: #ff746e;
+}
+.asset-topology .link-sample.unknown {
+  border-color: #8799a7;
+  border-top-style: dashed;
+}
+.asset-topology .topo-return {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  background: #0b4863;
+  color: #d2f4ff;
+  border: 1px solid #35b9e8;
+  padding: 8px;
+  cursor: pointer;
+}
+.asset-topology .business-page .work-nav-reuse,
+.asset-topology .business-page .settings-nav-reuse {
+  visibility: hidden;
+  pointer-events: none;
+}
+.asset-topology .business-page .work-center-v2,
+.asset-topology .business-page .settings-center {
+  grid-template-rows: minmax(0, 1fr) 0px;
+}
+.asset-topology .business-page .work-layout-v2,
+.asset-topology .business-page .settings-v2 {
+  height: 100%;
+}
+@media (max-width: 1250px) {
+  .asset-topology .top h1 {
+    font-size: 19px;
+    letter-spacing: 3px;
+  }
+  .asset-topology .top-business {
+    right: 8px;
+  }
+  .asset-topology .top-business button {
+    padding: 7px;
+    font-size: 9px;
+  }
+  .asset-topology .twin-layout {
+    grid-template-columns: 25% minmax(0, 1fr) 25%;
+  }
+  .asset-topology .twin-body {
+    padding: 7px;
+  }
+  .asset-topology .asset-pie {
+    width: 76px;
+    height: 76px;
+  }
+  .asset-topology .asset-pie:after {
+    inset: 18px;
+    font-size: 9px;
+  }
+  .asset-topology .twin-metrics b {
+    font-size: 13px;
+  }
+  .asset-topology .twin-center > .nav {
+    width: 96%;
+  }
+}
+.asset-topology .asset-return {
+  position: absolute;
+  right: 4px;
+  top: 68px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  box-sizing: border-box;
+  padding: 0;
+  border: 1px solid #03a3ff;
+  background: radial-gradient(circle, #043870 0%, #174474 50%, #6196c4 100%);
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+.asset-topology .asset-return img {
+  display: block;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+.asset-topology .asset-return:hover {
+  filter: brightness(1.3) drop-shadow(0 0 6px #32caff);
+}
+.asset-topology .asset-return:focus-visible {
+  outline: 2px solid #68e3ff;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+.asset-topology .asset-model > .room-scene {
+  position: absolute;
+  inset: 0;
+  height: auto;
+  min-height: 0;
+}
+.asset-topology .asset-load-status {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  right: 15%;
+  text-align: center;
+  color: #c6e2ff;
+}
+.asset-topology {
+  position: absolute;
+  inset: 0;
+  color: #c6e2ff;
+}
+.asset-topology .business-page {
+  height: 100%;
+  padding: 0;
+  display: block;
+  min-height: 0;
+}
+.asset-topology .twin-layout {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.asset-topology .twin-side {
+  position: absolute;
+  top: 5vw;
+  bottom: 0;
+  width: 25%;
+  box-sizing: border-box;
+  padding: 0 15px 15px;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+  min-width: 0;
+  min-height: 0;
+}
+.asset-topology .twin-side:first-child {
+  left: 0;
+}
+.asset-topology .twin-side:last-child {
+  right: 0;
+}
+.asset-topology .twin-center {
+  position: absolute;
+  top: 5vw;
+  left: 25%;
+  right: 25%;
+  bottom: 170px;
+  grid-template-rows: minmax(0, 1fr);
+}
+.asset-topology .twin-body {
+  padding: 0;
+  max-height: none;
+  font-size: 12px;
+}
+
+.asset-topology .network-fit-card .border-card__content {
+  display: flex;
+  padding: 8px 10px;
+  overflow: visible;
+}
+.asset-topology .network-fit-card .twin-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  max-height: none;
+  padding: 0;
+  overflow: visible;
+  gap: 6px;
+}
+.asset-topology .network-fit-card .twin-metrics {
+  flex: 1;
+  min-height: 0;
+  grid-auto-rows: minmax(0, 1fr);
+  gap: 6px;
+}
+.asset-topology .network-fit-card .twin-metrics > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 7px;
+  font-size: 11px;
+  line-height: 1.3;
+}
+.asset-topology .network-fit-card .twin-metrics b {
+  font-size: 18px;
+  margin-top: 4px;
+}
+.asset-topology .network-quality-card .twin-metrics b {
+  font-size: 14px;
+}
+.asset-topology .network-links-card .asset-total {
+  padding: 0;
+  flex-shrink: 0;
+}
+.asset-topology .network-links-card .asset-total strong {
+  font-size: 26px;
+  line-height: 1;
+}
+.asset-topology .network-links-card .status-row {
+  flex: 1;
+  min-height: 0;
+  padding: 0;
+  align-items: center;
+  grid-template-rows: minmax(0, 1fr) 7px;
+  gap: 3px;
+  font-size: 12px;
+}
+.asset-topology .network-layers-card .topo-layer {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  align-items: center;
+  padding: 0 7px;
+  font-size: 12px;
+}
+.asset-topology .network-ports-card .port-title {
+  margin: 0;
+  font-size: 12px;
+}
+.asset-topology .network-ports-card .port-stacked {
+  flex-shrink: 0;
+  margin: 2px 0 4px;
+}
+.asset-topology .network-quality-card .tiny-note {
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.4;
+}
+.asset-topology .network-quality-card .quality-placeholder {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 3px;
+  font-size: 11px;
+  letter-spacing: 0;
+}
+.asset-topology .network-detail-card .detail-title {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.3;
+}
+.asset-topology .network-detail-card .detail-kv {
+  flex: 1;
+  min-height: 0;
+  align-items: center;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1.2;
+}
+.asset-topology .network-detail-card .primary {
+  flex-shrink: 0;
+  height: 28px;
+  margin-top: 0 !important;
+  padding: 3px 6px;
+  font-size: 12px;
+}
+.asset-topology .network-detail-card .tiny-note {
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.3;
+}
+
+.asset-topology .asset-total-card .border-card__content,
+.asset-topology .asset-type-card .border-card__content,
+.asset-topology .asset-status-card .border-card__content,
+.asset-topology .asset-capacity-card .border-card__content,
+.asset-topology .asset-detail-card .border-card__content {
+  display: flex;
+  padding: 8px 10px;
+  overflow: visible;
+}
+.asset-topology .asset-total-card .twin-body,
+.asset-topology .asset-type-card .twin-body,
+.asset-topology .asset-status-card .twin-body,
+.asset-topology .asset-capacity-card .twin-body,
+.asset-topology .asset-detail-card .twin-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  max-height: none;
+  padding: 0;
+  overflow: visible;
+  gap: 6px;
+}
+.asset-topology .asset-total-card .asset-total {
+  flex-shrink: 0;
+  padding: 0;
+  gap: 8px;
+}
+.asset-topology .asset-total-card .asset-total strong {
+  font-size: 26px;
+  line-height: 1;
+}
+.asset-topology .asset-total-card .twin-metrics,
+.asset-topology .asset-capacity-card .twin-metrics {
+  flex: 1;
+  min-height: 0;
+  grid-auto-rows: minmax(0, 1fr);
+  gap: 5px;
+}
+.asset-topology .asset-total-card .twin-metrics > div,
+.asset-topology .asset-capacity-card .twin-metrics > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3px 7px;
+  font-size: 10px;
+  line-height: 1.15;
+}
+.asset-topology .asset-total-card .twin-metrics b {
+  font-size: 14px;
+  margin-top: 2px;
+}
+.asset-topology .asset-capacity-card .twin-metrics b {
+  font-size: 18px;
+  margin-top: 4px;
+}
+.asset-topology .asset-capacity-card .twin-metrics > div {
+  background: rgba(8, 49, 73, 0.28);
+}
+.asset-topology .asset-capacity-card .status-track {
+  flex-shrink: 0;
+  margin-top: 2px !important;
+}
+.asset-topology .asset-type-card .asset-type-chart {
+  flex: 1;
+  min-height: 0;
+  justify-content: space-evenly;
+  gap: 12px;
+}
+.asset-topology .asset-type-card .asset-pie {
+  width: clamp(76px, 8vw, 130px);
+  height: auto;
+  max-height: 100%;
+  aspect-ratio: 1;
+}
+.asset-topology .asset-type-card .asset-pie::after {
+  inset: 23%;
+  font-size: 13px;
+}
+.asset-topology .asset-type-card .asset-legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: stretch;
+  font-size: 12px;
+  line-height: 1.3;
+}
+.asset-topology .asset-status-card .twin-body {
+  gap: 8px;
+}
+.asset-topology .asset-status-card .status-row {
+  flex: 1;
+  min-height: 0;
+  padding: 0;
+  grid-template-rows: minmax(0, 1fr) 8px;
+  align-items: center;
+  font-size: 12px;
+  gap: 5px;
+}
+.asset-topology .asset-status-card .status-row b {
+  font-size: 16px;
+}
+.asset-topology .asset-status-card .status-track {
+  height: 8px;
+  align-self: end;
+}
+.asset-topology .asset-detail-card .detail-title {
+  flex-shrink: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.asset-topology .asset-detail-card .detail-kv {
+  flex: 1;
+  min-height: 0;
+  align-items: center;
+  padding: 0;
+  font-size: 12px;
+  line-height: 1.2;
+}
+.asset-topology .twin-visual .border-card__content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 0;
+}
+.asset-topology .twin-toolbar {
+  height: auto;
+  min-height: 44px;
+  flex-wrap: wrap;
+}
+.asset-topology .asset-room,
+.asset-topology .topo-room {
+  min-height: 180px;
+}
+.asset-topology .topo-canvas {
+  min-height: 180px;
+}
+.asset-topology .ok {
+  color: #3ce3a3;
+}
+.asset-topology .danger {
+  color: #ff5b67;
+}
+.asset-topology .warn {
+  color: #ffb547;
+}
+.asset-topology .primary {
+  background: #087ba7;
+  border: 1px solid #2bc8f1;
+  color: white;
+  padding: 7px 12px;
+  cursor: pointer;
+}
+.asset-topology button:focus-visible,
+.asset-topology input:focus-visible {
+  outline: 2px solid #69cbf5;
+  outline-offset: 2px;
+}
+@media (max-width: 1100px) {
+  .asset-topology .topo-search {
+    flex-wrap: wrap;
+  }
+  .asset-topology .topo-search input {
+    width: 100%;
+  }
+}
+.asset-topology .twin-metrics > div {
+  padding: 5px 7px;
+}
+.asset-topology .asset-total {
+  padding: 0 0 5px;
+}
+.asset-topology .asset-total strong {
+  font-size: 30px;
+}
+.asset-topology .detail-kv {
+  padding: 4px 0;
+}
+.asset-topology .border-card__content {
+  scrollbar-width: thin;
+  scrollbar-color: #237bad transparent;
+}
+.asset-topology .topo-edge {
+  pointer-events: stroke;
+}
+.asset-topology .twin-metrics.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.asset-topology .topology-visual {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.asset-topology .topology-visual .twin-toolbar {
+  justify-content: flex-end;
+  border: 0;
+}
+.asset-topology .topology-visual .twin-visual-foot {
+  border: 0;
+}
+.asset-topology .topology-visual .topo-canvas {
+  background: transparent;
+}
+.asset-topology .asset-model {
+  display: block !important;
+}
+.asset-topology .model-reset {
+  position: absolute;
+  top: 12px;
+  right: 4px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid #03a3ff;
+  background: radial-gradient(circle, #043870 0%, #174474 50%, #6196c4 100%);
+  cursor: pointer;
+}
+.asset-topology .model-reset img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+.asset-topology .topology-visual .topo-room {
+  background: transparent;
+}
+.asset-topology .topo-return {
+  z-index: 6;
+}

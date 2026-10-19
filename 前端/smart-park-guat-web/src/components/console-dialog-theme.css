@@ -1,0 +1,60 @@
+.console-themed-dialog,
+.console-themed-surface {
+  --el-bg-color: #092441;
+  --el-bg-color-overlay: #092441;
+  --el-fill-color-blank: #0c3357;
+  --el-fill-color-light: #123e60;
+  --el-fill-color: #123e60;
+  --el-fill-color-lighter: #163e5a;
+  --el-fill-color-dark: #245276;
+  --el-text-color-primary: #c6e2ff;
+  --el-text-color-regular: #b4d4ed;
+  --el-text-color-secondary: #91abc7;
+  --el-text-color-placeholder: #6d8fac;
+  --el-border-color: #297ba9;
+  --el-border-color-light: #245276;
+  --el-border-color-lighter: #245276;
+  --el-color-primary: #36c8ed;
+  --el-color-primary-light-3: #65daf6;
+  --el-color-primary-light-9: #103c59;
+  --el-color-primary-dark-2: #1f9cbd;
+  color: #c6e2ff;
+  background: linear-gradient(145deg, #0c2e50, #071b36);
+}
+.console-themed-dialog {
+  border: 1px solid #297ba9;
+  border-radius: 10px;
+  box-shadow:
+    0 0 28px rgba(24, 131, 191, 0.2),
+    0 20px 60px rgba(0, 8, 24, 0.55);
+  padding: 22px;
+}
+.console-themed-dialog .el-dialog__header,
+.console-themed-dialog .el-drawer__header {
+  padding-bottom: 16px;
+  margin-bottom: 18px;
+  border-bottom: 1px solid #245276;
+}
+.console-themed-dialog .el-dialog__title,
+.console-themed-dialog .el-drawer__title {
+  color: #6edff5;
+}
+.console-themed-dialog .el-dialog__body,
+.console-themed-dialog .el-drawer__body {
+  color: #c6e2ff;
+}
+.console-themed-dialog .el-radio-button__original-radio:checked + .el-radio-button__inner {
+  color: #062039;
+}
+.console-themed-dialog .el-empty {
+  --el-empty-fill-color-0: #103654;
+  --el-empty-fill-color-1: #164261;
+  --el-empty-fill-color-2: #123854;
+  --el-empty-fill-color-3: #1b4b68;
+  --el-empty-fill-color-4: #164261;
+  --el-empty-fill-color-5: #0c2946;
+  --el-empty-fill-color-6: #123854;
+  --el-empty-fill-color-7: #0a223b;
+  --el-empty-fill-color-8: #164261;
+  --el-empty-fill-color-9: #0c2946;
+}

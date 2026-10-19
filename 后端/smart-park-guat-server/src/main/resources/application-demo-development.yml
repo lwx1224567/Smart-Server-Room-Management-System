@@ -1,0 +1,5 @@
+# Opt-in local development profile. Activate explicitly with demo-development.
+# Room ID resolved from the development inventory during stage A.8; cabinet ID remains dynamic.
+console:
+  demo:
+    room-id: "1"

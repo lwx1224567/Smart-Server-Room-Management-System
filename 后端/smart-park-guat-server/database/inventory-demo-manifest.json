@@ -1,0 +1,624 @@
+{
+  "cabinets": [
+    {
+      "code": "A-01",
+      "name": "A区 01号机柜",
+      "zone": "A",
+      "serial": "IDC01-A-001",
+      "column": 0,
+      "row": 0,
+      "position": [
+        -6,
+        0,
+        -4.8
+      ]
+    },
+    {
+      "code": "A-02",
+      "name": "A区 02号机柜",
+      "zone": "A",
+      "serial": "IDC01-A-002",
+      "column": 0,
+      "row": 1,
+      "position": [
+        -6,
+        0,
+        -3.35
+      ]
+    },
+    {
+      "code": "A-03",
+      "name": "A区 03号机柜",
+      "zone": "A",
+      "serial": "IDC01-A-003",
+      "column": 0,
+      "row": 2,
+      "position": [
+        -6,
+        0,
+        -1.9
+      ]
+    },
+    {
+      "code": "A-04",
+      "name": "A区 04号机柜",
+      "zone": "A",
+      "serial": "IDC01-A-004",
+      "column": 0,
+      "row": 3,
+      "position": [
+        -6,
+        0,
+        -0.45
+      ]
+    },
+    {
+      "code": "D-01",
+      "name": "D区 01号机柜",
+      "zone": "D",
+      "serial": "IDC01-D-001",
+      "column": 0,
+      "row": 4,
+      "position": [
+        -6,
+        0,
+        1
+      ]
+    },
+    {
+      "code": "D-02",
+      "name": "D区 02号机柜",
+      "zone": "D",
+      "serial": "IDC01-D-002",
+      "column": 0,
+      "row": 5,
+      "position": [
+        -6,
+        0,
+        2.45
+      ]
+    },
+    {
+      "code": "D-03",
+      "name": "D区 03号机柜",
+      "zone": "D",
+      "serial": "IDC01-D-003",
+      "column": 0,
+      "row": 6,
+      "position": [
+        -6,
+        0,
+        3.9
+      ]
+    },
+    {
+      "code": "A-05",
+      "name": "A区 05号机柜",
+      "zone": "A",
+      "serial": "IDC01-A-005",
+      "column": 1,
+      "row": 0,
+      "position": [
+        -3.6,
+        0,
+        -4.8
+      ]
+    },
+    {
+      "code": "A-06",
+      "name": "A区 06号机柜",
+      "zone": "A",
+      "serial": "IDC01-A-006",
+      "column": 1,
+      "row": 1,
+      "position": [
+        -3.6,
+        0,
+        -3.35
+      ]
+    },
+    {
+      "code": "A-07",
+      "name": "A区 07号机柜",
+      "zone": "A",
+      "serial": "IDC01-A-007",
+      "column": 1,
+      "row": 2,
+      "position": [
+        -3.6,
+        0,
+        -1.9
+      ]
+    },
+    {
+      "code": "A-08",
+      "name": "A区 08号机柜",
+      "zone": "A",
+      "serial": "IDC01-A-008",
+      "column": 1,
+      "row": 3,
+      "position": [
+        -3.6,
+        0,
+        -0.45
+      ]
+    },
+    {
+      "code": "D-04",
+      "name": "D区 04号机柜",
+      "zone": "D",
+      "serial": "IDC01-D-004",
+      "column": 1,
+      "row": 4,
+      "position": [
+        -3.6,
+        0,
+        1
+      ]
+    },
+    {
+      "code": "D-05",
+      "name": "D区 05号机柜",
+      "zone": "D",
+      "serial": "IDC01-D-005",
+      "column": 1,
+      "row": 5,
+      "position": [
+        -3.6,
+        0,
+        2.45
+      ]
+    },
+    {
+      "code": "D-06",
+      "name": "D区 06号机柜",
+      "zone": "D",
+      "serial": "IDC01-D-006",
+      "column": 1,
+      "row": 6,
+      "position": [
+        -3.6,
+        0,
+        3.9
+      ]
+    },
+    {
+      "code": "B-01",
+      "name": "B区 01号机柜",
+      "zone": "B",
+      "serial": "IDC01-B-001",
+      "column": 2,
+      "row": 0,
+      "position": [
+        -1.2,
+        0,
+        -4.8
+      ]
+    },
+    {
+      "code": "B-02",
+      "name": "B区 02号机柜",
+      "zone": "B",
+      "serial": "IDC01-B-002",
+      "column": 2,
+      "row": 1,
+      "position": [
+        -1.2,
+        0,
+        -3.35
+      ]
+    },
+    {
+      "code": "B-03",
+      "name": "B区 03号机柜",
+      "zone": "B",
+      "serial": "IDC01-B-003",
+      "column": 2,
+      "row": 2,
+      "position": [
+        -1.2,
+        0,
+        -1.9
+      ]
+    },
+    {
+      "code": "B-04",
+      "name": "B区 04号机柜",
+      "zone": "B",
+      "serial": "IDC01-B-004",
+      "column": 2,
+      "row": 3,
+      "position": [
+        -1.2,
+        0,
+        -0.45
+      ]
+    },
+    {
+      "code": "D-07",
+      "name": "D区 07号机柜",
+      "zone": "D",
+      "serial": "IDC01-D-007",
+      "column": 2,
+      "row": 4,
+      "position": [
+        -1.2,
+        0,
+        1
+      ]
+    },
+    {
+      "code": "D-08",
+      "name": "D区 08号机柜",
+      "zone": "D",
+      "serial": "IDC01-D-008",
+      "column": 2,
+      "row": 5,
+      "position": [
+        -1.2,
+        0,
+        2.45
+      ]
+    },
+    {
+      "code": "D-09",
+      "name": "D区 09号机柜",
+      "zone": "D",
+      "serial": "IDC01-D-009",
+      "column": 2,
+      "row": 6,
+      "position": [
+        -1.2,
+        0,
+        3.9
+      ]
+    },
+    {
+      "code": "B-05",
+      "name": "B区 05号机柜",
+      "zone": "B",
+      "serial": "IDC01-B-005",
+      "column": 3,
+      "row": 0,
+      "position": [
+        1.2,
+        0,
+        -4.8
+      ]
+    },
+    {
+      "code": "B-06",
+      "name": "B区 06号机柜",
+      "zone": "B",
+      "serial": "IDC01-B-006",
+      "column": 3,
+      "row": 1,
+      "position": [
+        1.2,
+        0,
+        -3.35
+      ]
+    },
+    {
+      "code": "B-07",
+      "name": "B区 07号机柜",
+      "zone": "B",
+      "serial": "IDC01-B-007",
+      "column": 3,
+      "row": 2,
+      "position": [
+        1.2,
+        0,
+        -1.9
+      ]
+    },
+    {
+      "code": "B-08",
+      "name": "B区 08号机柜",
+      "zone": "B",
+      "serial": "IDC01-B-008",
+      "column": 3,
+      "row": 3,
+      "position": [
+        1.2,
+        0,
+        -0.45
+      ]
+    },
+    {
+      "code": "E-01",
+      "name": "E区 01号机柜",
+      "zone": "E",
+      "serial": "IDC01-E-001",
+      "column": 3,
+      "row": 4,
+      "position": [
+        1.2,
+        0,
+        1
+      ]
+    },
+    {
+      "code": "E-02",
+      "name": "E区 02号机柜",
+      "zone": "E",
+      "serial": "IDC01-E-002",
+      "column": 3,
+      "row": 5,
+      "position": [
+        1.2,
+        0,
+        2.45
+      ]
+    },
+    {
+      "code": "E-03",
+      "name": "E区 03号机柜",
+      "zone": "E",
+      "serial": "IDC01-E-003",
+      "column": 3,
+      "row": 6,
+      "position": [
+        1.2,
+        0,
+        3.9
+      ]
+    },
+    {
+      "code": "C-01",
+      "name": "C区 01号机柜",
+      "zone": "C",
+      "serial": "IDC01-C-001",
+      "column": 4,
+      "row": 0,
+      "position": [
+        3.6,
+        0,
+        -4.8
+      ]
+    },
+    {
+      "code": "C-02",
+      "name": "C区 02号机柜",
+      "zone": "C",
+      "serial": "IDC01-C-002",
+      "column": 4,
+      "row": 1,
+      "position": [
+        3.6,
+        0,
+        -3.35
+      ]
+    },
+    {
+      "code": "C-03",
+      "name": "C区 03号机柜",
+      "zone": "C",
+      "serial": "IDC01-C-003",
+      "column": 4,
+      "row": 2,
+      "position": [
+        3.6,
+        0,
+        -1.9
+      ]
+    },
+    {
+      "code": "C-04",
+      "name": "C区 04号机柜",
+      "zone": "C",
+      "serial": "IDC01-C-004",
+      "column": 4,
+      "row": 3,
+      "position": [
+        3.6,
+        0,
+        -0.45
+      ]
+    },
+    {
+      "code": "E-04",
+      "name": "E区 04号机柜",
+      "zone": "E",
+      "serial": "IDC01-E-004",
+      "column": 4,
+      "row": 4,
+      "position": [
+        3.6,
+        0,
+        1
+      ]
+    },
+    {
+      "code": "E-05",
+      "name": "E区 05号机柜",
+      "zone": "E",
+      "serial": "IDC01-E-005",
+      "column": 4,
+      "row": 5,
+      "position": [
+        3.6,
+        0,
+        2.45
+      ]
+    },
+    {
+      "code": "E-06",
+      "name": "E区 06号机柜",
+      "zone": "E",
+      "serial": "IDC01-E-006",
+      "column": 4,
+      "row": 6,
+      "position": [
+        3.6,
+        0,
+        3.9
+      ]
+    },
+    {
+      "code": "C-05",
+      "name": "C区 05号机柜",
+      "zone": "C",
+      "serial": "IDC01-C-005",
+      "column": 5,
+      "row": 0,
+      "position": [
+        6,
+        0,
+        -4.8
+      ]
+    },
+    {
+      "code": "C-06",
+      "name": "C区 06号机柜",
+      "zone": "C",
+      "serial": "IDC01-C-006",
+      "column": 5,
+      "row": 1,
+      "position": [
+        6,
+        0,
+        -3.35
+      ]
+    },
+    {
+      "code": "C-07",
+      "name": "C区 07号机柜",
+      "zone": "C",
+      "serial": "IDC01-C-007",
+      "column": 5,
+      "row": 2,
+      "position": [
+        6,
+        0,
+        -1.9
+      ]
+    },
+    {
+      "code": "C-08",
+      "name": "C区 08号机柜",
+      "zone": "C",
+      "serial": "IDC01-C-008",
+      "column": 5,
+      "row": 3,
+      "position": [
+        6,
+        0,
+        -0.45
+      ]
+    },
+    {
+      "code": "E-07",
+      "name": "E区 07号机柜",
+      "zone": "E",
+      "serial": "IDC01-E-007",
+      "column": 5,
+      "row": 4,
+      "position": [
+        6,
+        0,
+        1
+      ]
+    },
+    {
+      "code": "E-08",
+      "name": "E区 08号机柜",
+      "zone": "E",
+      "serial": "IDC01-E-008",
+      "column": 5,
+      "row": 5,
+      "position": [
+        6,
+        0,
+        2.45
+      ]
+    },
+    {
+      "code": "E-09",
+      "name": "E区 09号机柜",
+      "zone": "E",
+      "serial": "IDC01-E-009",
+      "column": 5,
+      "row": 6,
+      "position": [
+        6,
+        0,
+        3.9
+      ]
+    }
+  ],
+  "devices": [
+    [
+      "core",
+      "CORE-01",
+      "核心交换机",
+      "SWITCH",
+      "CORE",
+      "A-01"
+    ],
+    [
+      "agg",
+      "AGG-01",
+      "汇聚交换机",
+      "SWITCH",
+      "AGGREGATE",
+      "A-01"
+    ],
+    [
+      "sw1",
+      "SW-01",
+      "接入交换机",
+      "SWITCH",
+      "ACCESS",
+      "A-01"
+    ],
+    [
+      "sw2",
+      "SW-02",
+      "接入交换机",
+      "SWITCH",
+      "ACCESS",
+      "A-02"
+    ],
+    [
+      "srv1",
+      "SRV-01",
+      "服务器 A",
+      "SERVER",
+      "TERMINAL",
+      "A-01"
+    ],
+    [
+      "srv2",
+      "SRV-02",
+      "服务器 B",
+      "SERVER",
+      "TERMINAL",
+      "A-01"
+    ],
+    [
+      "nas",
+      "NAS-01",
+      "存储设备",
+      "STORAGE",
+      "TERMINAL",
+      "A-01"
+    ],
+    [
+      "srv3",
+      "SRV-03",
+      "服务器 C",
+      "SERVER",
+      "TERMINAL",
+      "A-02"
+    ],
+    [
+      "srv4",
+      "SRV-04",
+      "服务器 D",
+      "SERVER",
+      "TERMINAL",
+      "A-02"
+    ]
+  ]
+}
