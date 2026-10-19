@@ -294,7 +294,6 @@ onBeforeUnmount(() => room?.dispose());
   gap: 8px;
   font-size: 11px;
   white-space: nowrap;
-  transition: opacity 0.15s;
 }
 :deep(.zone-connectors) {
   position: absolute;
@@ -309,9 +308,6 @@ onBeforeUnmount(() => room?.dispose());
   stroke-width: 1;
   opacity: 0.38;
   stroke-dasharray: 3 4;
-}
-:deep(.zone-label.cabinet-hovered) {
-  opacity: 0.45;
 }
 :deep(.zone-label svg) {
   width: 12px;

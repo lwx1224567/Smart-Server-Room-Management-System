@@ -1049,7 +1049,6 @@ export function createRoom(
     racks.forEach((r) => (r.highlight.visible = id ? r.id === id : r.zone === zone));
     labels.forEach((l) => {
       l.el.classList.toggle('is-active', l.zone.id === zone);
-      l.el.classList.toggle('cabinet-hovered', Boolean(id));
     });
     viewport.dataset.highlight = zone || rackMap.get(id ?? '')?.zone || '';
     viewport.dataset.highlightDevice = id || '';
