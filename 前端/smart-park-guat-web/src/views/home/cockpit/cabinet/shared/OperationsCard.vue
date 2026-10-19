@@ -133,8 +133,8 @@
               :key="index"
             >
               <td>{{ (index % state.logs.length) + 1 }}</td>
-              <td :title="log.logCode ? `${log.logCode} · ${log.action}` : log.action">
-                {{ log.action }}<small v-if="log.logCode" class="log-code">{{ log.logCode }}</small>
+              <td :title="log.action">
+                {{ log.action }}
               </td>
               <td>{{ log.time }}</td>
               <td>{{ log.user }}</td>
@@ -605,12 +605,5 @@ th {
 }
 td {
   color: #c6e2ff;
-}
-.log-code {
-  display: block;
-  color: #91abc7;
-  font-size: 10px;
-  line-height: 14px;
-  white-space: nowrap;
 }
 </style>
