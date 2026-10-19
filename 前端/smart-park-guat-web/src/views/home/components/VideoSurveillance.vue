@@ -28,8 +28,8 @@
           ><i :class="status" />{{ playUrl && !videoError ? '播放中' : statusLabels[status] }}</span
         >
       </div>
-      <div class="demo-badge">{{ live ? '实时监控' : '监控视频回放' }}</div>
-      <div v-if="sourceError" class="preview-label preview-note">{{ sourceError }}</div>
+      <div v-if="live" class="demo-badge">实时监控</div>
+      <div v-if="sourceError && !playUrl" class="preview-label preview-note">{{ sourceError }}</div>
       <div v-else-if="!playUrl" class="preview-label preview-note">视频未配置</div>
       <div v-if="videoError" class="preview-label" role="status">
         视频加载失败 <button @click="retryVideo">重试</button>
