@@ -35,6 +35,12 @@
     <!-- 项目依赖配置 -->
     <dependencies>
         <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>2.3.232</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
@@ -83,6 +89,14 @@
 
     <!-- 构建配置 -->
     <build>
+        <resources>
+            <resource><directory>src/main/resources</directory></resource>
+            <resource>
+                <directory>database/migrations</directory>
+                <targetPath>bootstrap</targetPath>
+                <includes><include>V001__inventory_schema.sql</include><include>V002__inventory_demo_seed.sql</include><include>V004__monitoring_schema.sql</include></includes>
+            </resource>
+        </resources>
         <plugins>
             <!-- Maven编译插件，用于编译Java源代码 -->
             <plugin>
